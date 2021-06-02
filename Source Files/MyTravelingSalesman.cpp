@@ -18,7 +18,6 @@ using namespace std;
 
 unsigned long long MyTravelingSalesman(vector<vector<double>>& d) {
 	int n = d.size();
-	n = 5;
 	if ( n > 27) { return -1; }//allow problems up to size 27 cities, return error code otherwise
 	//create bit maps to check whether each city was visited before
 	vector<unsigned int> loc(n);
